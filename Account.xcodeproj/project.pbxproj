@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD8D2E426A0A00F00F1EED9 /* ErrorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8D2E326A0A00F00F1EED9 /* ErrorText.swift */; };
+		5FD8D2E726A15A4100F1EED9 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8D2E626A15A4100F1EED9 /* View+Extension.swift */; };
+		5FD8D2EF26A15EFE00F1EED9 /* ActionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD8D2EE26A15EFE00F1EED9 /* ActionStyle.swift */; };
 		5FF33AD0269CB9C900F414F1 /* AccountApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF33ACF269CB9C900F414F1 /* AccountApp.swift */; };
 		5FF33AD2269CB9C900F414F1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF33AD1269CB9C900F414F1 /* SignUpView.swift */; };
 		5FF33AD4269CB9CC00F414F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF33AD3269CB9CC00F414F1 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FD8D2E326A0A00F00F1EED9 /* ErrorText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorText.swift; sourceTree = "<group>"; };
+		5FD8D2E626A15A4100F1EED9 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		5FD8D2EE26A15EFE00F1EED9 /* ActionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStyle.swift; sourceTree = "<group>"; };
 		5FF33ACC269CB9C900F414F1 /* Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Account.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF33ACF269CB9C900F414F1 /* AccountApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApp.swift; sourceTree = "<group>"; };
 		5FF33AD1269CB9C900F414F1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FD8D2EA26A15EA000F1EED9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8D2ED26A15EE800F1EED9 /* Style */,
+				5FF33AE4269CCA3200F414F1 /* EntryField.swift */,
+				5FF33AD1269CB9C900F414F1 /* SignUpView.swift */,
+				5FD8D2E326A0A00F00F1EED9 /* ErrorText.swift */,
+				5FF33AE8269CCEEF00F414F1 /* ActionButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FD8D2EB26A15EB000F1EED9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8D2E626A15A4100F1EED9 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5FD8D2EC26A15EC200F1EED9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FF33ADF269CC72600F414F1 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FD8D2ED26A15EE800F1EED9 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8D2EE26A15EFE00F1EED9 /* ActionStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
 		5FF33AC3269CB9C900F414F1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +100,13 @@
 		5FF33ACE269CB9C900F414F1 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				5FF33AE4269CCA3200F414F1 /* EntryField.swift */,
+				5FD8D2EC26A15EC200F1EED9 /* ViewModel */,
+				5FD8D2EB26A15EB000F1EED9 /* Extensions */,
+				5FD8D2EA26A15EA000F1EED9 /* View */,
 				5FF33ACF269CB9C900F414F1 /* AccountApp.swift */,
-				5FF33AD1269CB9C900F414F1 /* SignUpView.swift */,
-				5FF33ADF269CC72600F414F1 /* SignUpViewModel.swift */,
 				5FF33AD3269CB9CC00F414F1 /* Assets.xcassets */,
 				5FF33AD8269CB9CC00F414F1 /* Info.plist */,
 				5FF33AD5269CB9CC00F414F1 /* Preview Content */,
-				5FF33AE8269CCEEF00F414F1 /* ActionButton.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -150,7 +191,10 @@
 				5FF33AD2269CB9C900F414F1 /* SignUpView.swift in Sources */,
 				5FF33AE5269CCA3200F414F1 /* EntryField.swift in Sources */,
 				5FF33AD0269CB9C900F414F1 /* AccountApp.swift in Sources */,
+				5FD8D2EF26A15EFE00F1EED9 /* ActionStyle.swift in Sources */,
+				5FD8D2E426A0A00F00F1EED9 /* ErrorText.swift in Sources */,
 				5FF33AE0269CC72600F414F1 /* SignUpViewModel.swift in Sources */,
+				5FD8D2E726A15A4100F1EED9 /* View+Extension.swift in Sources */,
 				5FF33AE9269CCEEF00F414F1 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
